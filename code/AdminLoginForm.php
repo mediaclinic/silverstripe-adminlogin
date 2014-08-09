@@ -5,8 +5,7 @@ class AdminLoginForm extends MemberLoginForm {
 	public function __construct($controller, $name, $fields = null, $actions = null,
 								$checkCurrentUser = true) {
 									
-		parent::__construct($controller, $name, $fields, $actions, $checkCurrentUser);
-		
+		parent::__construct($controller, $name, $fields, $actions, $checkCurrentUser);		
 		
 		if($field = $this->Actions()->fieldByName('forgotPassword')) {
 			// replaceField won't work, since it's a dataless field
@@ -25,6 +24,13 @@ class AdminLoginForm extends MemberLoginForm {
 			})();
 JS
 		);
+
+		// LATEST JQUERY FROM GOOGLE
+		Requirements::javascript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+		Requirements::css('adminlogin/css/bootstrap.min.css');
+		Requirements::css('adminlogin/css/bootstrap-theme.css');
+		Requirements::javascript('adminlogin/js/bootstrap.min.js');
+
 	}
 	
 	/**

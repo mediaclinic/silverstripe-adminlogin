@@ -14,17 +14,36 @@
 	<![endif]-->
 </head>
 <body class="$ClassName">
-<div class="container-fluid" id="main">
-	<div class="row-fluid" id="maininner">
-    	<div class="loginlogo"></div>        
-    	<div class="form">
-            <div class="content">
-            	<h3>$Title</h3>
-                $Content
-            </div>
-    		$Form
-        </div>
-    </div>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-4 col-md-offset-4">
+
+			<div class="panel panel-default">
+
+				<div class="panel-body">
+
+			    	<div class="loginlogo"></div>        
+
+					<div class="form">
+						<h3>$Title</h3>
+						$Content
+						$Form
+					</div>
+
+				</div>
+
+			</div>
+
+			<p class="text-center"><small class="text-muted">Site Building and Design: HOOP</small></p>				
+
+		</div>
+
+	</div>
+
 </div>
+
 </body>
 </html>
